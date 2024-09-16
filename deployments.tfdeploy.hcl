@@ -11,7 +11,7 @@ deployment "development" {
   inputs = {
     aws_identity_token = identity_token.aws.jwt
     role_arn            = "arn:aws:iam::931787512616:role/stacks"
-    regions             = "eu-central-1"
+    regions             = ["eu-central-1"]
     vpc_name = "vpc-dev1"
     vpc_cidr = "10.0.0.0/16"
 
